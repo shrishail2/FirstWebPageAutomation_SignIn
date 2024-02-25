@@ -26,15 +26,27 @@ public class SignInPage {
 		{
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		System.out.println("hey");
+		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("shrishail");
+		//driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("shrishail@gmail.com");
+		/*{note:: another way of writing XAPATH its by using tagname fromparent to the child //div[2]/form/input[1]}*/
+		driver.findElement(By.xpath("//div[1]/form/input[2]")).sendKeys("shrishail@gmail.com");
+		driver.findElement(By.xpath("//input[@placeholder='Phone Number']")).sendKeys("100");
+		driver.findElement(By.xpath("//form/div/button[2]")).click();
+		//System.out.println(driver.findElement(By.xpath("//form/p")).getText());//writing xpath from parent to child Traverse
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText()); //writing Csslocator path from parent to child Traverse
+		
+
+		//form/div/button[2]
+		
+
 		}
 		else
 		{
 			System.out.println("you");
 			System.out.println("hee");
-			
-			
-			
+				
 		}
+			
 		
 		
 		
