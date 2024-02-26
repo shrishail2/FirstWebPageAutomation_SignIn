@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SignInPage {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException   {
 		// TODO Auto-generated method stub
 
 		WebDriver driver =new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//this line is for waiting for the object to show on the page
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.id("inputUsername")).sendKeys("shrishailHiremath");
 		driver.findElement(By.name("inputPassword")).sendKeys("Itachi@1234");
@@ -25,6 +25,8 @@ public class SignInPage {
 		if( d.contentEquals("* Incorrect username or password"))
 		{
 		driver.findElement(By.linkText("Forgot your password?")).click();
+		//Thread.sleep(1000);//this line is for if the page is bufering it will wait 1 sec till to ge the page in stable state to show on the page
+		
 		System.out.println("hey");
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("shrishail");
 		//driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("shrishail@gmail.com");
@@ -34,9 +36,21 @@ public class SignInPage {
 		driver.findElement(By.xpath("//form/div/button[2]")).click();
 		//System.out.println(driver.findElement(By.xpath("//form/p")).getText());//writing xpath from parent to child Traverse
 		System.out.println(driver.findElement(By.cssSelector("form p")).getText()); //writing Csslocator path from parent to child Traverse
+		driver.findElement(By.xpath("//button[@class ='go-to-login-btn']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//div[2]/form/input[1]")).sendKeys("rahul");//parent to child traverse by XPATH
+		driver.findElement(By.xpath("//div[2]/form/input[2]")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.cssSelector("input[type*='chec']")).click();//normalize css path 
+		driver.findElement(By.xpath("//button[contains(@class,'submit signInBtn')]")).click();
 		
+		
+		System.out.println(driver.findElement(By.xpath("//div/h2")).getText());//parent to child traverse by XPATH
+		System.out.println(driver.findElement(By.xpath("//div/h1")).getText());//parent to child traverse by XPATH
+		System.out.println(driver.findElement(By.xpath("//div/p")).getText());//parent to child traverse by XPATH
+		
+		driver.findElement(By.cssSelector("div button")).click();//CSS path parentTraverse method
 
-		//form/div/button[2]
+		
 		
 
 		}
