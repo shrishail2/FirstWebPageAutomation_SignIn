@@ -44,8 +44,8 @@ public class SignInPage {
 		driver.findElement(By.xpath("//button[contains(@class,'submit signInBtn')]")).click();
 		
 		
-		System.out.println(driver.findElement(By.xpath("//div/h2")).getText());//parent to child traverse by XPATH
-		System.out.println(driver.findElement(By.xpath("//div/h1")).getText());//parent to child traverse by XPATH
+		System.out.println(driver.findElement(By.xpath("//div[1]/h2")).getText());//parent to child traverse by XPATH
+		System.out.println(driver.findElement(By.xpath("//div[1]/h1")).getText());//parent to child traverse by XPATH
 		System.out.println(driver.findElement(By.xpath("//div/p")).getText());//parent to child traverse by XPATH
 		
 		driver.findElement(By.cssSelector("div button")).click();//CSS path parentTraverse method
