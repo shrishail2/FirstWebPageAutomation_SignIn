@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
+//PARSE THE STRING WITH JAVA METHODS TO GET THE PASSWORD DYNAMICALLY FROM THE PAGE
 public class SignInPage2 {
 
 	public static void main(String[] args) throws InterruptedException {
