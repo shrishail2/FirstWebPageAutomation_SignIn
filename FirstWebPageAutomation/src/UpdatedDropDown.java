@@ -1,7 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//Updated lecture on latest Dropdown looping UI
 public class UpdatedDropDown {
 
 	public static void main(String[] args) throws InterruptedException {
