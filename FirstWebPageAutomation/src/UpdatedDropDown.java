@@ -20,6 +20,8 @@ public class UpdatedDropDown {
        
         }*/
       //by using while loop
+        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());//befor clicking on adults
+
         int i =1;
         while(i<5) 
         {
@@ -27,7 +29,7 @@ public class UpdatedDropDown {
         	i++;
         }
         driver.findElement(By.id("btnclosepaxoption")).click();
-        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());//after clicking 5 times on adult
       //*[@id = 'divpaxinfo']
       //  Thread.sleep(1000);
         //driver.findElement(By.xpath("//*[@id = 'divpaxinfo']")).getText();
