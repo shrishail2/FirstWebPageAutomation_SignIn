@@ -34,7 +34,7 @@ public class Productstore {
 		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
 		// Thread.sleep(1000);
-		driver.findElement(By.cssSelector("a[id='cartur']")).click();
+		//driver.findElement(By.cssSelector("a[id='cartur']")).click();
 		// System.out.println(driver.findElement(By.xpath("//td[text()='Samsung galaxy
 		// s6']")).getText());
 

@@ -26,32 +26,19 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Dell/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0.jar" sourcepath="C:/Users/Dell/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/Dell/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar" sourcepath="C:/Users/Dell/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-api"/>
-			<attribute name="maven.version" value="4.15.0"/>
+			<attribute name="maven.groupId" value="net.bytebuddy"/>
+			<attribute name="maven.artifactId" value="byte-buddy"/>
+			<attribute name="maven.version" value="1.14.12"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Dell/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.18.1/selenium-chrome-driver-4.18.1.jar" sourcepath="C:/Users/Dell/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.18.1/selenium-chrome-driver-4.18.1-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-chrome-driver"/>
-			<attribute name="maven.version" value="4.18.1"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Dell/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1.jar" sourcepath="C:/Users/Dell/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-api"/>
-			<attribute name="maven.version" value="4.18.1"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Dell/Downloads/commons-io-2.15.1-bin/commons-io-2.15.1/commons-io-2.15.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dell/Downloads/commons-io-2.15.1-bin/commons-io-2.15.1/commons-io-2.15.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dell/Downloads/commons-io-2.15.1-bin/commons-io-2.15.1/commons-io-2.15.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dell/Downloads/commons-io-2.15.1-bin/commons-io-2.15.1/commons-io-2.15.1-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dell/Downloads/commons-io-2.15.1-bin/commons-io-2.15.1/commons-io-2.15.1-test-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
